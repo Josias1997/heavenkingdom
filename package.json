@@ -1,0 +1,42 @@
+{
+  "name": "heavenkingdom",
+  "version": "1.0.0",
+  "description": "Music Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josias1997/heavenkingdom.git"
+  },
+  "keywords": [
+    "hk",
+    "hkm"
+  ],
+  "author": "Holy Spirit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Josias1997/heavenkingdom/issues"
+  },
+  "homepage": "https://github.com/Josias1997/heavenkingdom#readme",
+  "dependencies": {
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "less-loader": "^5.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}

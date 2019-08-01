@@ -25,7 +25,7 @@ SECRET_KEY = 'u4le)f-t@t#=0n7i=x)yfxcn+f2$q)0*!w)(@2*s95a@(ecf0c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'heavenkingdom.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'hkmfrontend/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'heavenkingdom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'heavenkingdom',
+        'USER': 'root',
+        'PASSWORD': '',
+        'PORT': 3306,
+        'HOST': 'localhost'
     }
 }
 
@@ -120,3 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = 'medias/'
+MEDIA_ROOT = 'hkm/medias'
